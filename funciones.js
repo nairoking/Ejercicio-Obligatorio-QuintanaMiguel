@@ -141,6 +141,22 @@ ordenarBtn.addEventListener('click', () => {
   ordenarUsuariosPorApellidoYNombre(masculinosglobal, femeninoglobal);
 });
 
+
+const buscarBtn = document.querySelector('#btanio');
+
+
+buscarBtn.addEventListener('click', () =>{
+      const x = document.querySelector('#anio').value;
+     
+      const filtrados = guardados.filter(u => {
+        
+        return u.registered.age > x;
+    });
+
+    console.log(filtrados.length);
+      mostrarUsuarios(filtrados);
+});
+
 const volverBtn = document.querySelector('#volver');
 volverBtn.addEventListener('click', () =>{
   const select = document.querySelector('#paises-select');

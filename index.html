@@ -36,13 +36,12 @@
               <button type="submit" class="btn btn-warning">Mostrar</button>
             </th>
           </tr>
+          
         </thead>
       </table>
-   
-      
-   
     </form>
- 
+    
+    
   
   <table class="table table-striped">
     <button id="ordenar-btn" class="btn btn-warning">Ordenar usuarios por apellido y nombre</button>
@@ -54,9 +53,35 @@
     </thead>
     <tbody id="usuarios"></tbody>
   </table>
-  <label for="pais">Filtrar por país:</label>
-  <select id="paises-select" name="pais"></select>
-  <button id="volver" class="btn btn-warning">Volver</button>
+  <table>
+    <thead>
+      <tr>
+          <th>
+            <label for="años" class="col-form-label">Cantidad de años:</label>
+          </th>
+          <th>
+            <input type="number" class="form-control" id="anio" name="anio" min="1" required>
+          </th>
+          <th>
+            <button class="btn btn-warning" id="btanio">Buscar</button>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <label for="pais">Filtrar por país:</label>
+          </th>
+          <th> 
+            <select id="paises-select" name="pais"></select>
+          </th>
+          <th>
+            <button id="volver" class="btn btn-warning">Quitar Filtro</button>
+          </th>
+        </tr>
+    </thead>
+  </table>
+ 
+ 
+  
 
  
   
