@@ -143,6 +143,11 @@ ordenarBtn.addEventListener('click', () => {
 
 const volverBtn = document.querySelector('#volver');
 volverBtn.addEventListener('click', () =>{
+  const select = document.querySelector('#paises-select');
+  var opciones = select.options;
+  for (var i = opciones.length - 1; i >= 0; i--) {
+    opciones[i] = null;
+  }
   mostrarUsuarios(guardados);
 });
   
